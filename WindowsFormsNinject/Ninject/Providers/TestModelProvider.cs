@@ -7,7 +7,7 @@ namespace WindowsFormsNinject.Ninject.Providers
     {
         protected override ITestModel CreateInstance(IContext context)
         {
-            return new TestModel("Created by Ninject Provider");
+            return new TestModel("Created by custom Ninject Provider");
         }
     }
 }

@@ -5,6 +5,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsNinject.Ninject.Strategies
 {
+    /// <summary>
+    /// Ninject ActivationStrategy to inject user controls recursively
+    /// </summary>
     public class WindowsFormsStrategy : ActivationStrategy
     {
         // Activate is called after Kernel.Inject even for objects not created by Ninject

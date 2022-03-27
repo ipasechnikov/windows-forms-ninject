@@ -1,5 +1,8 @@
 ﻿namespace WindowsFormsNinject.Models
 {
+    /// <summary>
+    /// Conrate implementation of out test model
+    /// </summary>
     internal class TestModel : BaseModel, ITestModel
     {
         private string _testText;

@@ -5,6 +5,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsNinject.Ninject.Strategies
 {
+    /// <summary>
+    /// Extension methods for Ninject IKernel used by WindowsFormsStrategy
+    /// </summary>
     static public class WinFormsInstanceProviderAux
     {
         static public void InjectDescendantOf(this IKernel kernel, ContainerControl containerControl)
