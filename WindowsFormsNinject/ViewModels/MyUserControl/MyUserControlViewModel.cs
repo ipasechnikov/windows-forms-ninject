@@ -2,6 +2,11 @@
 
 namespace WindowsFormsNinject.ViewModels.MyUserControl
 {
+    /// <summary>
+    /// Concrete implementation of IMyUserControlViewModel interface
+    /// This implementation saves textbox text as it is into model
+    /// And displays uppercased textbox text in label
+    /// </summary>
     public class MyUserControlViewModel : BaseViewModel, IMyUserControlViewModel
     {
         private ITestModel _model;
@@ -21,6 +26,8 @@ namespace WindowsFormsNinject.ViewModels.MyUserControl
             {
                 _model.TestText = value;
                 LabelText = value;
+
+                // Notify view that property has changed
                 NotifyPropertyChanged("TextBoxText");
             }
         }
@@ -31,6 +38,8 @@ namespace WindowsFormsNinject.ViewModels.MyUserControl
             set
             {
                 _labelText = value.ToUpper();
+
+                // Notify view that property has changed
                 NotifyPropertyChanged("LabelText");
             }
         }

@@ -1,7 +1,7 @@
 ﻿namespace WindowsFormsNinject.Models
 {
     /// <summary>
-    /// Conrate implementation of out test model
+    /// Conrete implementation of out test model interface
     /// </summary>
     internal class TestModel : BaseModel, ITestModel
     {
@@ -18,6 +18,9 @@
             set
             {
                 _testText = value;
+                // It's not required to raise a PropertyChanged event in this case
+                // There are no listeners for model PropertyChanged event
+                // But if there were any, this line of code could come in handy
                 NotifyPropertyChanged("TestText");
             }
         }

@@ -7,6 +7,9 @@ namespace WindowsFormsNinject.Ninject.Strategies
 {
     /// <summary>
     /// Ninject ActivationStrategy to inject user controls recursively
+    /// 
+    /// Great thanks to this answer on StackOverflow
+    /// https://stackoverflow.com/a/33928388
     /// </summary>
     public class WindowsFormsStrategy : ActivationStrategy
     {

@@ -7,6 +7,9 @@ namespace WindowsFormsNinject.Ninject.Strategies
 {
     /// <summary>
     /// Extension methods for Ninject IKernel used by WindowsFormsStrategy
+    /// 
+    /// Great thanks to this answer on StackOverflow
+    /// https://stackoverflow.com/a/33928388
     /// </summary>
     static public class WinFormsInstanceProviderAux
     {

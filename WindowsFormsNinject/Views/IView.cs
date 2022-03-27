@@ -2,6 +2,10 @@
 
 namespace WindowsFormsNinject.Views
 {
+    /// <summary>
+    /// Every form or control must inherit from this interface if they use MVVM pattern
+    /// </summary>
+    /// <typeparam name="TViewModel">viewmodel interface</typeparam>
     public interface IView<TViewModel> where TViewModel : IViewModel
     {
         /// <summary>

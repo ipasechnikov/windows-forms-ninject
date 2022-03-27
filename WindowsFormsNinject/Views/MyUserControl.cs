@@ -20,13 +20,19 @@ namespace WindowsFormsNinject.Views
             set
             {
                 _viewModel = value;
+
+                // Bind textbox and label fields after viewmodel is injected
                 BindViewModel(_viewModel);
             }
         }
 
         public void BindViewModel(IMyUserControlViewModel viewModel)
         {
+            // Bind label's Text property to viewmodel's LabelText property
             label1.DataBindings.Add(new Binding("Text", _viewModel, "LabelText"));
+
+            // Bind textbox's Text property to viewmodel's TextBoxText property
+            // You have to pass DataSourceUpdateMode.OnPropertyChanged otherwise viewmodel property won't be updated
             textBox1.DataBindings.Add(new Binding("Text", _viewModel, "TextBoxText", false, DataSourceUpdateMode.OnPropertyChanged));
         }
     }

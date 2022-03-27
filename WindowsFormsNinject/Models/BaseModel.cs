@@ -3,7 +3,7 @@
 namespace WindowsFormsNinject.Models
 {
     /// <summary>
-    /// Every model class must inherit this base class
+    /// Concrete implementation of IModel interface
     /// </summary>
     public abstract class BaseModel : IModel
     {

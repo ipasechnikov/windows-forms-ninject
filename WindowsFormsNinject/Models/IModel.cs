@@ -3,7 +3,7 @@
 namespace WindowsFormsNinject.Models
 {
     /// <summary>
-    /// Every model interface must inherit this base interface
+    /// Every model must inherit this base interface implicitly or explicitly
     /// </summary>
     public interface IModel : INotifyPropertyChanged
     {
